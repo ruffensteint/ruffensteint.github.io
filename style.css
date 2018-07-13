@@ -16,7 +16,7 @@ html, body {
 	top: 0;
 	background-size: cover;
 }
-.intro .inner {
+.intro .container {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
