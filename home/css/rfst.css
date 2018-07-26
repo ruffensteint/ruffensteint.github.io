@@ -52,6 +52,12 @@ body {
 h1 {
 	font-family: "Prizma Fine";
 }
+
+h2 {
+	font-family: OpenDyslexicMono, OpenDyslexicAlta;	
+	color: #FFFFFF
+}
+
 h3 {
 	color: #ffffff;
 	font-size: 30px;
