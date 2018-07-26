@@ -88,3 +88,13 @@ h4 {
 	font-size: small;
 	text-indent: 10px;
 }
+#slogan h2 {
+	text-align: center;
+	font-family: OpenDyslexicMono;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 400;
+	transform: scale(1.315,1.315);
+}
+#showcase {
+}
