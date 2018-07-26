@@ -41,10 +41,11 @@ body a:hover
 
 .body-wrapper
 {
-	margin: 0px;
+	margin: 30px;
 	background-color: #213454;
 	position: relative;
 }
+
 
 .doc-loader 
 {
