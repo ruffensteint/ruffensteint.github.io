@@ -184,6 +184,16 @@ strong {
 img {
   max-width: 100%;
 }
+.container-fluid .grid.img-container.justify-content-center.no-gutters .right {
+	float: none;
+}
+.container-fluid .grid.img-container.justify-content-center.no-gutters .left {
+}
+.row.justify-content-center .col-lg-10.col-md-9.col-12.body_block.align-content-center #float {
+}
+
+
+
 
 @media (max-width: 768px) {
   h1, .h1 {
