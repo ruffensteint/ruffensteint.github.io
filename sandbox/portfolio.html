@@ -1,252 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet' type='text/css'>
-  <link href="portfolio style.css" rel="stylesheet" type="text/css" media="screen">
-  <script type="text/javascript" src="portfolio js.js"></script>
-  <title>Bruce Young - Personal Portfolio</title>
-
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Cocoon -Portfolio">
+    <meta name="keywords" content="Cocoon , Portfolio">
+    <meta name="author" content="Pharaohlab">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title> Cocoon -Portfolio</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
+<body>
+<div class="loader">
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
+</div>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="body-container container-fluid">
+    <a class="menu-btn" href="javascript:void(0)">
+        <i class="ion ion-grid"></i>
+    </a>
+    <div class="row justify-content-center">
+        <!--=================== side menu ====================-->
+        <div class="col-lg-2 col-md-3 col-12 menu_block">
 
-  <nav id="nav-bar" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-        <a class="navbar-brand animated flip" href="#twoam">2am ninja</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-
-  <header id="twoam">
-    <div class="container-fluid">
-      <div class="row me animated fadeIn">
-        <div class="col-xs-offset-5 col-sm-offset-6 col-xs-7 col-sm-6">
-          <div class="tagline1">the portfolio of</div>
-          <div class="tagline2 animated fadeIn">BRUCE</div>
-          <div class="tagline2 animated fadeIn">YOUNG</div>
-          <div class="animated fadeIn">
-            <div class="tagline3a">{</div>
-            <div class="tagline3b">designer :
-              <br> coder :
-              <br> biologist :
-              <br> astronomer :
-              <br> educator :
-              <br>
+            <!--logo -->
+            <div class="logo_box">
+                <a href="#">
+                    <img src="assets/img/logo.png" alt="cocoon">
+                </a>
             </div>
-            <div class="tagline3c">}</div>
-          </div>
+            <!--logo end-->
+
+            <!--main menu -->
+            <div class="side_menu_section">
+                <ul class="menu_nav">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--main menu end -->
+
+            <!--filter menu -->
+            <div class="side_menu_section">
+                <h4 class="side_title">filter by:</h4>
+                <ul  id="filtr-container"  class="filter_nav">
+                    <li  data-filter="*" class="active"><a href="javascript:void(0)" >all</a></li>
+                    <li data-filter=".branding"> <a href="javascript:void(0)">branding</a></li>
+                    <li data-filter=".design"><a href="javascript:void(0)">design</a></li>
+                    <li data-filter=".photography"><a href="javascript:void(0)">photography</a></li>
+                    <li data-filter=".architecture"><a href="javascript:void(0)">architecture</a></li>
+                </ul>
+            </div>
+            <!--filter menu end -->
+
+
+            <!--social and copyright -->
+            <div class="side_menu_bottom">
+                <div class="side_menu_bottom_inner">
+                    <ul class="social_menu">
+                        <li>
+                            <a href="#"> <i class="ion ion-social-pinterest"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="ion ion-social-facebook"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="ion ion-social-twitter"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="ion ion-social-dribbble"></i> </a>
+                        </li>
+                    </ul>
+                    <div class="copy_right">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+            <!--social and copyright end -->
+
         </div>
-      </div>
-      <div id="down" class="animated infinite slideInDown">
-        <i class="fa fa-chevron-circle-down fa-5x" aria-hidden="true"></i>
-      </div>
+        <!--=================== side menu end====================-->
+
+        <!--=================== content body ====================-->
+        <div class="col-lg-10 col-md-9 col-12 body_block  align-content-center">
+            <!--=================== filter portfolio start====================-->
+            <div class="portfolio gutters grid img-container">
+                <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+                <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://rapidgator.net/file/89c42743931af4c697e893515f226409/Master_Alchemist.gif" title="project name 1">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/masteralc.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  branding architecture  col-md-6 col-lg-3">
+                    <a href="https://rapidgator.net/file/32aab461b97fbfcc2249822d657d286d/MidnightSun.gif" title="project name 2">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/nightsun.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://rapidgator.net/file/b6442607b9e74b9a4042374d2d29ad3c/MidnightSun2.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/nightsun2.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  photography design col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://cdn.dribbble.com/users/2397891/screenshots/4799877/x_2.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/x.gif" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  branding photography  col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://cdn.dribbble.com/users/2397891/screenshots/4853509/motorbike.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/motorbike.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item   architecture design col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://cdn.dribbble.com/users/2397891/screenshots/4855947/alphawheelie.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/Wheelie.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://rg.to/file/fd52966216176a34bf120ceb9ec73adf/Conspiracy.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/conspiracy.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  branding design  col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://i.imgur.com/UqUk58c.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/motorbike2.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item architecture  col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://rg.to/file/a83e3907ec37f6b00e302927494a9ddc/RuffENSTEINT.gif" title="project name 4">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/ruffen.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://rg.to/file/910e6044323bdf3c0b2f109092b60ca1/CocoBeach.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/cocobeach.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item  branding design  col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://rg.to/file/3db2175543f13db5a79cc984c865281b/UltraReflection.gif" title="project name 5">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/reflection.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item architecture  col-sm-12 col-md-6 col-lg-3">
+                    <a href="https://rg.to/file/e3e36053a34bfea4f723f78c2c8336fe/DG-Circle-Logo.gif.html" title="project name 4">
+                        <div class="project_box_one">
+                            <img src="assets/img/portfolio/circledg.png" alt="pro1" />
+                            <div class="product_info">
+                                <div class="product_info_text">
+                                    <div class="product_info_text_inner">
+                                        <i class="ion ion-plus"></i>
+                                        <h4>project name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--=================== filter portfolio end====================-->
+        </div>
+        <!--=================== content body end ====================-->
     </div>
-  </header>
-
-
-  <!-- about page -->
-  <section id="about" class="container-fluid">
-
-    <div class="row section-banner">
-      <div class="col-md-offset-3 col-md-6 text-center">
-        <div>
-          <span class="line about"></span>
-          <span class="section-title about">about</span>
-          <span class="line about"></span>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row max">
-
-      <div class="col-sm-4 text-center">
-        <div class="desc">
-          <div class="icon-me"><i class="fa fa-user"></i></div>
-          <p>A full stack developer with an eye for design, UX and UI development and a strong desire to learn and create. I have had a long career in the areas of educational software, multimedia production and web development.</p>
-        </div>
-      </div>
-
-      <div class="col-sm-4 text-center">
-        <div class="desc">
-          <div class="icon-me"><i class="fa fa-mortar-board"></i></div>
-          <p>I firmly believe in life long learning and I'm constantly exploring new ideas and technologies. MOOC's have enabled me to update my skills and keep abreast of the latest trends in design and coding.</p>
-        </div>
-      </div>
-
-      <div class="col-sm-4 text-center">
-        <div class="desc">
-          <div class="icon-me"><i class="fa fa-rocket"></i></div>
-          <p>My interests are wide with formal qualifications in Biology, Astronomy and Education. I have designed and/or written software for a large international diagnosics company, schools and universities.</p>
-        </div>
-      </div>
-
-    </div>
-
-
-  </section>
-
-
-  <!-- portfolio projects page -->
-  <section id="portfolio" class="container-fluid">
-
-    <div class="row section-banner">
-      <div class="col-md-offset-3 col-md-6 text-center">
-        <div>
-          <span class="line portfolio"></span>
-          <span class="section-title portfolio">portfolio</span>
-          <span class="line portfolio"></span>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row max">
-      <div class="col-sm-offset-2 col-sm-8 text-center">
-        <div class="desc">
-          <p>These items are mainly exercises done whilst undertaking a full stack development course with Free Code Camp. The details are on the back of the cards with links to my CodePen and live sites.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- portfoloio projects cards -->
-
-    <div class="row" id="theProjects">
-
-    </div>
-  </section>
-
-
-  <!-- contact page -->
-  <section id="contact" class="container-fluid">
-
-    <div class="row section-banner">
-      <div class="col-md-offset-3 col-md-6 text-center">
-        <div>
-          <span class="line contact"></span>
-          <span class="section-title contact">contact</span>
-          <span class="line contact"></span>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row max">
-
-      <!-- email contact -->
-      <div class="col-sm-4 text-center">
-        <div class="desc">
-          <div class="icon-contact">
-            <a data-toggle="tooltip" title="Email" data-placement="top" href="mailto:2am.ninja@outlook.com">
-              <i class="fa fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- facebook contact -->
-      <div class="col-sm-4 text-center">
-        <div class="desc">
-          <div class="icon-contact">
-            <a data-toggle="tooltip" title="Facebook" data-placement="top" href="https://www.facebook.com/bruce.young.7505" target="_blank">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Twitter contact -->
-      <div class="col-sm-4 text-center">
-        <div class="desc">
-          <div class="icon-contact">
-            <a data-toggle="tooltip" title="Twitter" data-placement="top" href="https://twitter.com/mutantspore" target="_blank">
-              <i class="fa fa-twitter-square"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
-    <!-- fixed footer for social links -->
-    <footer id='social-footer'>
-
-
-        <ul>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="Email" data-placement="top" href="mailto:2am.ninja@outlook.com">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-envelope fa-stack-1x blacktext"></i>
-                </a>
-            </li>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="FreeCodeCamp" data-placement="top" href="https://www.freecodecamp.com/mutantspore" target="_blank">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-fire fa-stack-1x blacktext"></i>
-                </a>
-            </li>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="Linkedin" data-placement="top" href="https://www.linkedin.com/in/brucewilliamyoung" target="_blank"><i class="fa fa-linkedin-square fa-stack-2x"></i></a>
-            </li>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="Twitter" data-placement="top" href="https://twitter.com/mutantspore" target="_blank"><i class="fa fa-twitter-square fa-stack-2x"></i></a>
-            </li>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="GitHub" data-placement="top" href="https://github.com/mutantspore" target="_blank"><i class="fa fa-github-square fa-stack-2x"></i></a>
-            </li>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="CodePen" data-placement="top" href="https://codepen.io/MutantSpore/" target="_blank">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-codepen fa-stack-1x blacktext"></i>
-                </a>
-            </li>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="Facebook" data-placement="top" href="https://www.facebook.com/bruce.young.7505" target="_blank"><i class="fa fa-facebook-square fa-stack-2x"></i></a>
-            </li>
-
-            <li class='highlight'>
-                <a class="fa-stack fa-1x" data-toggle="tooltip" title="Google+" data-placement="top" href="https://plus.google.com/102948303758999079100/posts/p/pub?hl=en" target="_blank"><i class="fa fa-google-plus-square fa-stack-2x"></i></a>
-            </li>
-
-        </ul>
+</div>
 
 
 
-        <div class="text-center copyright">
-        </div>
-
-
-    </footer>
+<!-- jquery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="assets/js/slick.min.js"></script>
+<!--Portfolio Filter-->
+<script src="assets/js/imgloaded.js"></script>
+<script src="assets/js/isotope.js"></script>
+<!-- Magnific-popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--Counter-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- WOW JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
